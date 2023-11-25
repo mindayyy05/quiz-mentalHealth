@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quiz.css">
+  <title>Quiz App</title>
+</head>
+<body>
+
+  <div class="container">
+  <div id="quiz-header">
+    
+    <h1>Mental Assessment Quiz</h1>
+    
+    <h2>Check your mental health with the Geriatric Depression Scale</h2>
+  </div>
+
+  <div id="quiz-container">
+    <div id="question-container">
+      <span id="question-number"></span>
+      <p id="question-text"></p>
+      <form id="answer-form">
+        <label>
+          <input type="radio" name="answer" value="yes" id="yes"> Yes
+        </label>
+        <label>
+          <input type="radio" name="answer" value="no" id="no"> No
+        </label>
+      </form>
+      <button onclick="prevQuestion()" id="back-btn">Back</button>
+      <button onclick="nextQuestion()" id="next-btn">Next</button>
+    </div>
+    <div id="result-container">
+      <p id="result-text"></p>
+    </div>
+  </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
